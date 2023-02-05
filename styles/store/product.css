@@ -1,0 +1,181 @@
+body{
+    width: 100%;
+    height: fit-content;
+}
+
+.main-content{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    margin: 20px 0;
+}   
+
+textarea{
+    resize: none;
+}
+
+
+
+    .--store_wrapper{
+        position: relative;
+        display: inline-flex;
+        width: 100%;
+        height: fit-content;
+        margin: 20px auto;
+
+    }
+
+        .-store-img_container{
+            position: relative;
+            display: inline-block;
+            width: 450px;
+            width: 450px;
+            left: 50px;
+            top: 10px;
+            margin: 10px;
+        }
+
+            #product_img{
+                border-radius: 10px;
+            }
+
+
+        .-store-payment_container{
+            float: right;
+            position: relative;
+            display: inline;
+            width: 450px;
+            height: fit-content;
+            left: 20%;
+            top: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            padding: 10px;
+
+            background-color: #101010;
+        }
+
+            .-payment-header_container{
+                position: relative;
+                width: 100%;
+                height: 20px;
+                margin: 10px auto;
+            }
+
+                #payment_h{
+                    color: #fff;
+                    text-align: center;
+                }
+
+            .-payment-links_container{
+                display: inline-block;
+                position: relative;
+                width: 100%;
+                padding: 10px;
+                height: 100px;
+                margin: 10px auto;
+            }
+
+
+                #pay_img{
+                    position: relative;
+                    width: 100%;
+                    margin-top: 20px;
+                    margin-left: auto;
+                    border-radius: 10px;
+                }
+
+        .--reviews{
+            display: inline-block;
+            position: relative;
+            width: 90%;
+            height: 550px;
+            border-radius: 5px;
+            left: 50px;
+            padding: 10px;
+            background-color: #101010;
+        }
+
+
+
+            .-review-header_container{
+                display: inline-block;
+                position: relative;
+                width: fit-content;
+                height: fit-content;
+                top: 10px;
+                left: 20px;
+            }
+
+                #review_h{
+                    color: #fff;
+                }
+
+            .-reviews-inputs_container{
+                display: inline-block;
+                position: relative;
+                width: 100%;
+                height: 200px;
+                top: 20px;
+                left: 20px;
+            }
+
+                #review_select{
+                    position: relative;
+                    width: fit-content;
+                    padding: 10px;
+                    border: 2px solid #fff;
+                    border-radius: 10px;
+                    outline: none;
+                    font-size: large;
+                    color: #fff;
+                    background-color: transparent;
+                }
+
+                    #review_select:hover{
+                        cursor: pointer;
+                        border: 2px solid #ff0000;
+                    }
+
+
+                    #review_select option{
+                        background-color: #101010;
+                    }
+
+         
+
+                #review_msg{
+                    position: relative;
+                    width: 90%;
+                    min-height: 320px;
+                    height: fit-content;
+                    resize: none;
+                    top: 20px;
+                    padding: 15px;
+                    border: 2px solid #fff;
+                    border-radius: 10px;
+                    outline: none;
+                    font-size: normal;
+                    color: #fff;
+                    background-color: transparent;
+                }
+
+
+                #review_btn{
+                    position: relative;
+                    width: 90%;
+                    padding: 10px;
+                    border: 2px solid #ffffff;
+                    border-radius: 10px;
+                    font-size: large;
+                    color: #fff;
+                    margin-top: 50px;
+                    background-color: transparent;
+                }
+
+                    #review_btn:hover{
+                        cursor: pointer;
+                        border: 2px solid #ff0000;
+                        background-color: #ff0000;
+                    }

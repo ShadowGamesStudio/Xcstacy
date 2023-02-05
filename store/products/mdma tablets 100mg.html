@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../../imgs/icons/logo_icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Rubik:ital@0;1&family=Teko&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../../styles/style.css" />
+    <link rel="stylesheet" href="../../styles/store/product.css" />
+
+
+    <title>MDMA Capsule</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <nav class='--navbar'>
+        <div class='-navbar-img_container'>
+            <img id='nav_logo' onclick='window.location.href="../../index.html";' src="../../imgs/icons/logo_banner.png" alt="logo banner" width='100%' />
+        </div>
+        <div class='-navbar-links_container'>
+            <a id='nav_link' target='_self' href="../../index.html">Home</a>
+            <a id='nav_link' target='_self' href="../../store.html">Store</a>
+            <a id='nav_link' target='_self' href="../../help.html">Help</a>
+            <a id='nav_link' target='_self' href="../../faqs.html">Faqs</a>
+        </div>
+    </nav>
+
+    <!-- main content -->
+
+    <div class='main-content'>
+
+        <div class='--store_wrapper'>
+            
+            <div class='-store-img_container'>
+                <img id='product_img' src="../../imgs/store/products/2.png" alt="" width='100%' />
+            </div>
+            <div class='-store-payment_container'>
+                <div class='-payment-header_container'>
+                    <h2 id='payment_h'>MDMA Tablets (100mg)</h2>
+                </div>
+                <div class='-payment-links_container'>
+                    <a href="" class="blockoPayBtn" data-toggle="modal" data-uid=2a77475d8880492e><img id='pay_img' width=160 src="../../imgs/store/btns/1.png"></a>
+                    <a href="" class="blockoPayBtn" data-toggle="modal" data-uid=eda57e6167b741b1><img id='pay_img' width=160 src="../../imgs/store/btns/2.png"></a>
+                    <a href="" class="blockoPayBtn" data-toggle="modal" data-uid=b177f89a696a463b><img id='pay_img' width=160 src="../../imgs/store/btns/3.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class='--reviews'>
+            <div class='-review-header_container'>
+                <h2 id='review_h'>Add review</h2>
+            </div>
+            <div class='-reviews-inputs_container'>
+                <form action='../../scripts/php/add_mdma_capsule_100_review.php' method="POST">    
+                    <select name="stars" id="review_select">
+                        <option value="1 stars">💊</option>
+                        <option value="2 stars">💊💊</option>
+                        <option value="3 stars">💊💊💊</option>
+                        <option value="4 stars">💊💊💊💊</option>
+                        <option value="5 stars">💊💊💊💊💊</option>
+                    </select>
+                    <textarea placeholder='How was your experience with this product?' name="review_msg" id="review_msg" cols="30" rows="10"></textarea>
+                    <button id='review_btn'>Add Review</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+
+    </script>
+
+
+<!-- btns -->
+
+<script src="https://www.blockonomics.co/js/pay_button.js"></script>
+<script>
+    const wrapper = document.querySelector('.modal-content');
+    const myModalLabel = document.getElementById('myModalLabel');
+    const quantity = document.getElementById('quantity');
+    const blockoPayBtnnmail = document.getElementById('blockoPayBtnnmail');
+    const blockoPayBtnCS0 = document.getElementById('blockoPayBtnCS0');
+    const blockoPayBtnCS1 = document.getElementById('blockoPayBtnCS1');
+
+    wrapper.style.backgroundColor = "#151515";
+    wrapper.style.borderRadius = "10px";
+    
+    wrapper.style.width = "400px" 
+    wrapper.style.color = "#fff";
+    myModalLabel.style.color = "#fff";
+
+    var btm_close_btn = document.querySelector('.left-button"');
+
+    btm_close_btn.style.display = "none";
+    
+</script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./imgs/icons/logo_icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Rubik:ital@0;1&family=Teko&display=swap"
+        rel="stylesheet">
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/faqs.css" />
+
+
+    <title>Store</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <nav class='--navbar'>
+        <div class='-navbar-img_container'>
+            <img id='nav_logo' onclick='window.location.href="./index.html";' src="./imgs/icons/logo_banner.png" alt="logo banner" width='100%' />
+        </div>
+        <div class='-navbar-links_container'>
+            <a id='nav_link' target='_self' href="./index.html">Home</a>
+            <a id='nav_link' target='_self' href="./store.html">Store</a>
+            <a id='nav_link' target='_self' href="./help.html">Help</a>
+            <a id='nav_link' target='_self' href="./faqs.html">Faqs</a>
+        </div>
+    </nav>
+
+    <!-- main content -->
+
+        <div class='main-content'>
+        
+            <div class='--faqs_wrapper'>
+    
+                <div class='-faqs-header_container'>
+                    <h1 id='faqs_title'>FAQS</h1>
+                </div>
+                <hr>
+                <div id='break_point'></div>
+                
+                <div class='-faqs-card_container'>
+                    <button type="button" class="collapsible">Will My Orders Be Traceble? <ion-icon id='dropdown_btn' name="chevron-down-outline"></ion-icon></button>
+                    <div class="-faqs-content_container">
+                        <p id='faqs_p'>
+                            No. Your orders will have be deleted from our databases
+                            once we have packaged them and have sent them on their way to you 😉
+                        </p>
+                    </div>
+                </div>
+    
+                <div class='-faqs-card_container'>
+                    <button type="button" class="collapsible">Will People Be Able To See If I was Ever On this Website? <ion-icon id='dropdown_btn' name="chevron-down-outline"></ion-icon></button>
+                    <div class="-faqs-content_container">
+                        <p id='faqs_p'>
+                            Yes And No. You see will be deleting our User visits every twice a week, but if wee some 
+                            strange activty on the site, we will delete all info while sending the orders that our 
+                            running orders to another secure database 😎
+                        </p>
+                    </div>
+                </div>
+    
+                <div class='-faqs-card_container'>
+                    <button type="button" class="collapsible">Are The Drugs That You Sell Safe? <ion-icon id='dropdown_btn' name="chevron-down-outline"></ion-icon></button>
+                    <div class="-faqs-content_container">
+                        <p id='faqs_p'>
+                            Yes. We have an advanced team that checks if the MDMA is safe or safe-ish even, which
+                            even if it is safe-ish, that we will throw away because we only give the upmost best MDMA
+                            For our customers 😲
+                        </p>
+                    </div>
+                </div>
+    
+                <div class='-faqs-card_container'>
+                    <button type="button" class="collapsible">What Is Loud Weed? <ion-icon id='dropdown_btn' name="chevron-down-outline"></ion-icon></button>
+                    <div class="-faqs-content_container">
+                        <p id='faqs_p'>
+                            Loud weed is the weed that you should be purchasing only. Due to the fact that it is safe
+                            where as reggie weed can cause severe brain damage, headaches, etc... So with that being said
+                            please if your not going to buy from our website weed, please make sure that the weed that you buy from a
+                            different website is Loud weed 🔥
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var dropdown_btn = document.getElementById("dropdown_btn");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                  dropdown_btn.name = "chevron-down-outline";
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                  dropdown_btn.name = "chevron-up-outline";
+                }
+              });
+            }
+            </script>
+
+</body>
+
+</html>
